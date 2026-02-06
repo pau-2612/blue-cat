@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue cat</title>
+
+    <!-- Boostrap - enlace al CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- NAVBAR BOOSTRAP -->
+        <nav class="navbar navbar-expand-lg nav-container">
+            <div class="container-fluid">
+                <a href="./index.html">
+                    <img src="./img/logo.png" alt="Inicio">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-menu-spacing">
+                        <li class="nav.menu.item">
+                            <a href="./pages/juguetes.html">Juguetes</a>
+                        </li>
+                        <li class="nav.menu.item">
+                            <a href="./pages/camas-cuevas.html">Camas y cuevas</a>
+                        </li>
+                        <li class="nav.menu.item">
+                            <a href="./pages/comederos.html">Comederos</a>
+                        </li>
+                        <li class="nav.menu.item">
+                            <a href="">Quienes somos</a>
+                        </li>
+                        <li class="nav.menu.item">
+                            <a href="./pages/contacto.html">Contáctanos</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-right-menu">
+                        <!-- search bar -->
+                        <div class="search-container">
+                            <input type="search" name="buscar" id="buscar" placeholder="Buscar">
+                            <a href="">
+                                <img src="./img/icons/search.png" alt="search-icon">
+                            </a>
+                        </div>
+
+                        <!-- user actions -->
+                        <ul class="user-actions">
+                            <li>
+                                <a class="user-actions-item" href="">
+                                    <img src="./img/icons/shopping-cart.png" alt="shopping-cart-icon">
+                                    <p>Carrito de compra</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="user-actions-item" href="">
+                                    <img src="./img/icons/user.png" alt="User-icon">
+                                    <p>iniciar sesión</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>   
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- blue cat life -->
+        <section class="hero">
+            <div class="hero-content">
+                <div>
+                    <p class="hero-superindice">Nueva colección</p>
+                    <h1>Blue Cat Life</h1>
+                    <p class="hero-body">Es una mezcla de paletas de colores de tendencia, texturas y textiles, perfecta para gatos aventureros.</p>
+                </div>
+                <div>
+                    <a class="secondary-button" href="./pages/nueva-coleccion.html">Ir a la colección</a>
+                </div>   
+            </div>
+            <div>
+                <img class="hero-img" src="./img/home/img-hero.jpg" alt="Imagen nueva coleccion">
+            </div>
+        </section>
+
+        <!-- diversion asegurada -->
+        <section class="home-intro">
+            <div class="h2-header">
+                <div">
+                    <h2>Diversión asegurada</h2>
+                    <p class="body-lg">Descubre los juguetes más vendidos para tu gato.</p>
+                </div>
+                <div>
+                    <a class="primary-button" href="./pages/juguetes.html">Ver todos los juguetes</a>
+                </div>
+            </div>
+
+            <!-- cards juguetes -->
+            <div class="main-diversion-cards">
+              <div class="card-plain">
+                <img src="./img/home/card-01.jpg" alt="Conejo soft">
+                <p class="body-lg">Conejo soft blue</p>
+                <p class="card-title">5,50 €</p>
+                <button class="secondary-button button-fill-content">Añadir al carrito</button>
+              </div>  
+
+              <div class="card-plain">
+                <img src="./img/home/card-02.jpg" alt="Gato sandstone">
+                <p class="body-lg">Gato sandstone</p>
+                <p class="card-title">5,50 €</p>
+                <button class="secondary-button button-fill-content">Añadir al carrito</button>
+              </div> 
+
+              <div class="card-plain">
+                <img src="./img/home/card-03.jpg" alt="Cañita ratón">
+                <p class="body-lg">Cañita ratón</p>
+                <p class="card-title">8,50 €</p>
+                <button class="secondary-button button-fill-content">Añadir al carrito</button>
+              </div> 
+
+              <div class="card-plain">
+                <img src="./img/home/card-04.jpg" alt="Gato sensorial">
+                <p class="body-lg">Gato sensorial</p>
+                <p class="card-title">4,50 €</p>
+                <button class="secondary-button button-fill-content">Añadir al carrito</button>
+              </div>
+              
+              <div class="card-plain">
+                <img src="./img/home/card-05.jpg" alt="Pato con catnip">
+                <p class="body-lg">Pato con catnip</p>
+                <p class="card-title">4,50 €</p>
+                <button class="secondary-button button-fill-content">Añadir al carrito</button>
+              </div> 
+            </div>
+        </section>
+
+        <!-- cards camas y comederos -->
+        <section class="main-cards-full">
+            <div class="card-full">
+                <img class="card-full-img" src="./img/home/camas.png" alt="Camas y cuevas">
+                <h3>Camas y cuevas</h3>
+                <div>
+                    <a class="secondary-button" href="./pages/camas-cuevas.html">Ver todas</a>
+                </div>
+            </div>
+
+            <div class="card-full">
+                <img class="card-full-img" src="./img/home/comederos.png" alt="Comederos">
+                <h3>Comederos</h3>
+                <div>
+                    <a class="secondary-button" href="./pages/comederos.html">Ver todos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- subscripcion -->
+        <section class="home-intro">
+             <div>
+                <h2>Suscríbete a nuestro programa de puntos </h2>
+                <p class="body-lg">Sumas con cada pedido y obtienes descuentos en compras futuras.</p>
+             </div>
+
+             <div class="textfield">
+                <div class="textfield-container">
+                    <img src="./img/icons/mail.png" alt="img de un correo">
+                    <input type="email" name="" id="" placeholder="Escribe tu email aquí">
+                </div>
+                <input class="primary-button" type="submit" value="Suscríbete">
+             </div>
+        </section>
+
+    </main>
+
+
+    <footer class="bkg-color-verde footer-spacing">
+        <!-- elementos izquierda -->
+        <div class="footer-left">
+             <img src="./img/logo.png" alt="logo">
+
+             <div class="footer-left-text">
+                <ul class="body-sm footer-left-text-items">
+                    <li><a href="./pages/juguetes.html">Juguetes</a></li>
+                    <li><a href="./pages/camas-cuevas.html">Camas</a></li>
+                    <li><a href="./pages/comederos.html">Comederos</a></li>
+                </ul>
+
+                <ul class="body-sm footer-left-text-items">
+                    <li><a href="">Términos y condiciones de compra</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                    <li><a href="">Cookies</a></li>
+                </ul>
+             </div>
+        </div>
+
+        <!-- elementos centro -->
+        <div class="footer-mid-right">
+             <div class="footer-mid">
+                <h4>¿Necesitas ayuda?</h4>
+                <ul class="body-sm footer-mid-help">
+                    <li>
+                        <a class="footer-mid-help-item" href="">
+                            <img class="img-ayuda" src="./img/assets footer/message-plus.png" alt="whatsapp">
+                            <p>WhatsApp</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-mid-help-item" href="">
+                            <img class="img-ayuda" src="./img/icons/mail.png" alt="email">
+                            <p>hola@bluecat.com</p>
+                        </a>
+                    </li>
+                </ul>
+             </div>
+             <div class="footer-mid">
+                <h4>Síguenos</h4>
+                <ul class="footer-mid-rrss">
+                    <li>
+                        <a href="">
+                            <img class="img-rrss" src="./img/assets footer/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="img-rrss" src="./img/assets footer/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="img-rrss" src="./img/assets footer/youtube.png" alt="youtube">
+                        </a>
+                    </li>
+                </ul>
+             </div> 
+        </div>
+
+        <!-- elementos derecha -->
+        <div class="footer-mid-right">
+             <div class="footer-right">
+                <h4>Métodos de pago</h4>
+                <ul class="footer-right-img">
+                    <li>
+                        <img class="img-pago-envio" src="./img/assets footer/visa.png" alt="visa">
+                    </li>
+                    <li>
+                        <img class="img-pago-envio" src="./img/assets footer/mastercard.png" alt="mastercard">
+                    </li>
+                    <li>
+                        <img class="img-pago-envio" src="./img/assets footer/apple.png" alt="apple-pay">
+                    </li>
+                </ul>
+             </div>
+
+             <div class="footer-right">
+                <h4>Servicios de envío</h4>
+                <ul class="footer-right-img">
+                    <li>
+                        <img class="img-pago-envio" src="./img/assets footer/gls.png" alt="gls">
+                    </li>
+                    <li>
+                        <img class="img-pago-envio" src="./img/assets footer/dhl.png" alt="dhl"> 
+                    </li>
+                    <li>
+                        <img class="img-pago-envio" src="./img/assets footer/paak.png" alt="paack">
+                    </li>
+                </ul>
+             </div>
+             
+        </div>
+
+    </footer>
+
+    <!-- Boostrap - funcionalidades -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

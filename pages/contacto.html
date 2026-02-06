@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <!-- Boostrap - enlace al CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!-- NAVBAR BOOSTRAP -->
+        <nav class="navbar navbar-expand-lg nav-container">
+            <div class="container-fluid">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="Inicio">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-menu-spacing">
+                        <li class="nav.menu.item">
+                            <a href="./juguetes.html">Juguetes</a>
+                        </li>
+                        <li class="nav.menu.item">
+                            <a href="./camas-cuevas.html">Camas y cuevas</a>
+                        </li>
+                        <li class="nav.menu.item">
+                            <a href="./comederos.html">Comederos</a>
+                        </li>
+                        <li class="nav.menu.item">
+                            <a href="">Quienes somos</a>
+                        </li>
+                        <li class="nav.menu.item  nav-active">
+                            <a href="">Contáctanos</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-right-menu">
+                        <!-- search bar -->
+                        <div class="search-container">
+                            <input type="search" name="buscar" id="buscar" placeholder="Buscar">
+                            <a href="">
+                                <img src="../img/icons/search.png" alt="search-icon">
+                            </a>
+                        </div>
+
+                        <!-- user actions -->
+                        <ul class="user-actions">
+                            <li>
+                                <a class="user-actions-item" href="">
+                                    <img src="../img/icons/shopping-cart.png" alt="shopping-cart-icon">
+                                    <p>Carrito de compra</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="user-actions-item" href="">
+                                    <img src="../img/icons/user.png" alt="User-icon">
+                                    <p>iniciar sesión</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>   
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="main-intro">
+             <!-- intro -->
+            <div>
+                <h1 class="h1-intro">Contacta con nosotros</h1>
+                <p class="body-lg">Rellena el formulario y en breve nos pondremos en contacto contigo.</p>
+            </div>
+
+            <form class="form-style">
+                <div class="user-container">
+                    <div class="contact-container">
+                        <label for="name-form">Nombre</label>
+                        <div class="textfield-container">
+                            <input type="text" id="name-form" placeholder="Nombre"required>
+                        </div>
+                    </div>
+                    <div class="contact-container">
+                        <label for="surname-form">Apellido</label>
+                        <div class="textfield-container">
+                            <input type="text" id="surname-form" placeholder="Apellido"required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-container">
+                    <label for="email-form">Email de contacto</label>
+                    <div class="textfield-container">
+                        <input type="email" id="email-form" placeholder="Email"required>
+                    </div>
+                </div>
+
+                <div class="contact-container">
+                    <label for="subject">Motivo de contacto</label>
+                    <select class="textfield-container" name="" id="subject"required> 
+                        <option value=""disabled selected hidden>Seleccionar una opcion</option>
+                        <option value="stock">No hay stock de lo que quiero</option>
+                        <option value="pedido">Problemas con un pago</option>
+                        <option value="envio">Problemas con un envío</option>
+                    </select>
+                </div>
+
+                <div class="contact-container">
+                    <label for="description">Descripción</label>
+                    <textarea class="textfield-container" name="" id="description" placeholder="Escribe aquí tu mensaje"required></textarea>
+                </div>
+
+                <div class="button-container">
+                    <input class="primary-button" type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="bkg-color-verde footer-spacing">
+
+        <!-- elementos izquierda -->
+        <div class="footer-left">
+             <img src="../img/logo.png" alt="logo">
+
+             <div class="footer-left-text">
+                <ul class="body-sm footer-left-text-items">
+                    <li><a href="./juguetes.html">Juguetes</a></li>
+                    <li><a href="./camas-cuevas.html">Camas</a></li>
+                    <li><a href="./comederos.html">Comederos</a></li>
+                </ul>
+
+                <ul class="body-sm footer-left-text-items">
+                    <li><a href="">Términos y condiciones de compra</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                    <li><a href="">Cookies</a></li>
+                </ul>
+             </div>
+        </div>
+
+        <!-- elementos centro -->
+        <div class="footer-mid-right">
+             <div class="footer-mid">
+                <h4>¿Necesitas ayuda?</h4>
+                <ul class="body-sm footer-mid-help">
+                    <li>
+                        <a class="footer-mid-help-item" href="">
+                            <img class="img-ayuda" src="../img/assets footer/whatsapp.png" alt="whatsapp">
+                            <p>WhatsApp</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-mid-help-item" href="">
+                            <img class="img-ayuda" src="../img/icons/mail.png" alt="email">
+                            <p>hola@bluecat.com</p>
+                        </a>
+                    </li>
+                </ul>
+             </div>
+             <div class="footer-mid">
+                <h4>Síguenos</h4>
+                <ul class="footer-mid-rrss">
+                    <li>
+                        <a href="">
+                            <img class="img-rrss" src="../img/assets footer/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="img-rrss" src="../img/assets footer/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="img-rrss" src="../img/assets footer/youtube.png" alt="youtube">
+                        </a>
+                    </li>
+                </ul>
+             </div> 
+        </div>
+
+        <!-- elementos derecha -->
+        <div class="footer-mid-right">
+             <div class="footer-right">
+                <h4>Métodos de pago</h4>
+                <ul class="footer-right-img">
+                    <li>
+                        <img class="img-pago-envio" src="../img/assets footer/visa.png" alt="visa">
+                    </li>
+                    <li>
+                        <img class="img-pago-envio" src="../img/assets footer/mastercard.png" alt="mastercard">
+                    </li>
+                    <li>
+                        <img class="img-pago-envio" src="../img/assets footer/apple.png" alt="apple-pay">
+                    </li>
+                </ul>
+             </div>
+
+             <div class="footer-right">
+                <h4>Servicios de envío</h4>
+                <ul class="footer-right-img">
+                    <li>
+                        <img class="img-pago-envio" src="../img/assets footer/gls.png" alt="gls">
+                    </li>
+                    <li>
+                        <img class="img-pago-envio" src="../img/assets footer/dhl.png" alt="dhl"> 
+                    </li>
+                    <li>
+                        <img class="img-pago-envio" src="../img/assets footer/paak.png" alt="paack">
+                    </li>
+                </ul>
+             </div>    
+        </div>
+    </footer>
+
+    <!-- Boostrap - funcionalidades -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</body>
+</html>
