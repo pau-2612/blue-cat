@@ -26,7 +26,7 @@
 
     --base-color-light-violet-color-100: #DADEFF;
     --base-color-light-violet-color-200: #BEC6FF;
-    --base-color-light-violet-color-300: #9FA9FA;
+    --base-color-light-violet-color-300: #b1b3c8;
     --base-color-light-violet-color-400: #848EDC;
     --base-color-light-violet-color-500: #6B75BF;
     --base-color-light-violet-color-600: #545DA2;
@@ -87,7 +87,7 @@
 
     --color-interactive-disabled-color-01: var(--base-color-light-green-color-100);
     --color-interactive-disabled-color-02: var(--base-color-light-green-color-300);
-    --color-interactive-disabled-color-03: var(--base-color-light-violet-color-400);
+    --color-interactive-disabled-color-03: var(--base-color-light-violet-color-300);
 
 
     --size-padding-none: var(--base-size-dimensions-0);
@@ -600,8 +600,7 @@ body main section form {
 }
 
 .textfield-container input::placeholder {
-    color: var(--color-core-content-alternative-violet);
-    opacity: 30%;
+    color: var(--color-interactive-disabled-color-03);
 }
 
 .textfield-container img {
@@ -610,18 +609,12 @@ body main section form {
 }
 
 textarea::placeholder {
-    color: var(--color-core-content-alternative-violet);
-    opacity: 30%;
+    color: var(--color-interactive-disabled-color-03);
     font-size: 12px;
 }
 
 select:invalid {
-    color: gray;
-}
-
-select option {
-    color: var(--color-core-content-brand);
-    opacity: 1;
+    color: var(--color-interactive-disabled-color-03);
     font-size: 12px;
 }
 
