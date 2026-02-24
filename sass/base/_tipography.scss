@@ -1,0 +1,59 @@
+
+
+@use '../utilities/variables'as *;
+
+@use '../utilities/mixins'as *;
+
+
+h1, h2, h3, h4, h5, body {
+    font-family: $font-family-primary;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    color: $color-core-content-alternative-violet;
+}
+
+body {
+    background-color: $color-core-background-default;
+    font-weight: 100;
+    color: $color-core-content-default;
+}
+
+h1 {
+    @include typo-styles(56px, 62px, left);
+}
+
+h2 {
+    @include typo-styles(48px, 52px, center);
+    margin-bottom: 16px;
+}
+
+h3 {
+    @include typo-styles(32px, 38px, center);
+}
+
+h4 {
+    @include typo-styles(16px, 20px, left);
+}
+
+
+
+/* ---- CLASES ---- */
+
+.body-lg {
+    @include typo-styles(16px, 20px, center);
+}
+.body-md {
+    @include typo-styles(14px, 18px, null);
+}
+.body-sm {
+    @include typo-styles(12px, 14px, null);
+}

@@ -1,0 +1,93 @@
+
+@use '../utilities/variables'as *;
+
+@use '../utilities/mixins'as *;
+
+
+body main section img {
+    width: 16px;
+    /* icono email size */
+}
+
+body main form label {
+    @include typo-styles(12px, 14px, left);
+    /* label form */
+}
+
+/* formulario de contacto */
+body main section form {
+    @include flex-values(center, column, null);
+    gap: 20px;
+    padding: 0 40px 40px 40px;
+    width: 60%;
+}
+
+/* ---- CLASES ---- */
+
+/* TEXTFIELD */
+
+.textfield {
+    @include flex-values(null, null, center);
+    max-width: 904px;
+    gap: 16px;
+    width: 50%;
+}
+
+.textfield-container {
+    @include flex-values(null, null, center);
+    gap: 8px;
+    flex: 1;
+    background-color: $color-core-background-default;
+    border: 1px solid $color-interactive-stroke-default;
+    border-radius: $size-border-radius-sm; 
+    padding: 8px 12px;
+}
+
+.textfield-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 12px;
+}
+
+.textfield-container input::placeholder {
+    color: $color-interactive-disabled-color-03;
+}
+
+.textfield-container img {
+    width: 16px;
+    height: 16px;
+}
+
+textarea::placeholder {
+    color: $color-interactive-disabled-color-03;
+    font-size: 12px;
+}
+
+select:invalid {
+    color: $color-interactive-disabled-color-03;
+    font-size: 12px;
+}
+
+.contact-container {
+    @include flex-values(null, column, null);
+    gap: 8px;
+    width: 100%;
+}
+
+.button-container {
+    @include flex-values(center, null, null);
+    padding-top: 24px;
+}
+
+
+/* CONTACTO */
+.form-style {
+    @include flex-values(center, null, null);
+}
+
+.user-container {
+    @include flex-values(center, null, null);
+    gap: 32px;
+    width: 100%
+}

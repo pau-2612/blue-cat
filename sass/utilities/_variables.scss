@@ -1,0 +1,122 @@
+
+/* Variables */
+/* tokens globales */
+
+$font-family-primary: "Figtree", sans-serif;
+
+$base-color-light-black-color: #0B0B0B;
+$base-color-light-white-color: #FEFEFF;
+
+$base-color-light-neutral-color-100: #E2E2E2;
+$base-color-light-neutral-color-200: #CECECE;
+$base-color-light-neutral-color-300: #B9B9B9;
+$base-color-light-neutral-color-400: #A5A5A5;
+$base-color-light-neutral-color-500: #919191;
+$base-color-light-neutral-color-600: #7C7C7C;
+$base-color-light-neutral-color-700: #686868;
+$base-color-light-neutral-color-800: #535353;
+$base-color-light-neutral-color-900: #3E3F3F;
+
+$base-color-light-green-color-100: #EAF4F5;
+$base-color-light-green-color-200: #BFF0F5;
+$base-color-light-green-color-300: #A6E8EF;
+$base-color-light-green-color-400: #79CBD3;
+$base-color-light-green-color-500: #63AFB6;
+$base-color-light-green-color-600: #4F9299;
+$base-color-light-green-color-700: #3D767C;
+$base-color-light-green-color-800: #2C5A5E;
+$base-color-light-green-color-900: #1D3E41;
+
+$base-color-light-violet-color-100: #DADEFF;
+$base-color-light-violet-color-200: #BEC6FF;
+$base-color-light-violet-color-300: #aaabb3;
+$base-color-light-violet-color-400: #848EDC;
+$base-color-light-violet-color-500: #6B75BF;
+$base-color-light-violet-color-600: #545DA2;
+$base-color-light-violet-color-700: #404885;
+$base-color-light-violet-color-800: #2E3568;
+$base-color-light-violet-color-900: #1E234B;
+
+$base-size-dimensions-0: 0px;
+$base-size-dimensions-50: 2px;
+$base-size-dimensions-100: 4px;
+$base-size-dimensions-150: 6px;
+$base-size-dimensions-200: 8px;
+$base-size-dimensions-250: 10px;
+$base-size-dimensions-300: 12px;
+$base-size-dimensions-400: 16px;
+$base-size-dimensions-500: 20px;
+$base-size-dimensions-600: 24px;
+$base-size-dimensions-700: 28px;
+$base-size-dimensions-800: 32px;
+$base-size-dimensions-900: 36px;
+$base-size-dimensions-1000: 40px;
+$base-size-dimensions-circle: 9999px;
+
+$base-size-border-width-0: 0px;
+$base-size-border-width-50: 1px;
+$base-size-border-width-100: 2px;
+
+/* tokens semanticos */
+$color-core-background-default: $base-color-light-white-color;
+$color-core-background-inverse: $base-color-light-green-color-400;
+$color-core-background-alternative-violet: $base-color-light-violet-color-100;
+$color-core-background-alternative-green: $base-color-light-green-color-100;
+$color-core-background-brand: $base-color-light-violet-color-700;
+
+$color-core-content-default: $base-color-light-black-color;
+$color-core-content-inverse: $base-color-light-green-color-100;
+$color-core-content-alternative-violet: $base-color-light-violet-color-700;
+$color-core-content-alternative-green: $base-color-light-green-color-600;
+$color-core-content-brand: $base-color-light-green-color-400;
+
+$color-interactive-background-color: $base-color-light-green-color-100;
+$color-interactive-background-default-enabled: $base-color-light-green-color-200;
+$color-interactive-background-default-hover: $base-color-light-green-color-300;
+$color-interactive-background-default-pressed: $base-color-light-green-color-400;
+$color-interactive-background-inverse-enabled: $base-color-light-white-color;
+$color-interactive-background-inverse-hover: $base-color-light-white-color;
+$color-interactive-background-inverse-pressed: $base-color-light-white-color;
+
+$color-interactive-content-default: $base-color-light-violet-color-700;
+$color-interactive-content-default-hover: $base-color-light-violet-color-900;
+$color-interactive-content-default-pressed: $base-color-light-violet-color-900;
+$color-interactive-content-inverse: $base-color-light-green-color-100;
+$color-interactive-content-alternative: $base-color-light-black-color;
+
+$color-interactive-stroke-default: $base-color-light-green-color-400;
+$color-interactive-stroke-inverse: $base-color-light-violet-color-700;
+$color-interactive-stroke-alternative: $base-color-light-violet-color-500;
+
+$color-interactive-disabled-color-01: $base-color-light-green-color-100;
+$color-interactive-disabled-color-02: $base-color-light-green-color-300;
+$color-interactive-disabled-color-03: $base-color-light-neutral-color-300;
+
+$size-padding-none: $base-size-dimensions-0;
+$size-padding-xxs: $base-size-dimensions-50;
+$size-padding-xs: $base-size-dimensions-100;
+$size-padding-sm: $base-size-dimensions-150;
+$size-padding-md: $base-size-dimensions-200;
+$size-padding-lg: $base-size-dimensions-250;
+$size-padding-xl: $base-size-dimensions-300;
+$size-padding-xxl: $base-size-dimensions-400;
+$size-padding-xxxl: $base-size-dimensions-500;
+
+$size-gap-none: $base-size-dimensions-0;
+$size-gap-xs: $base-size-dimensions-50;
+$size-gap-sm: $base-size-dimensions-100;
+$size-gap-md: $base-size-dimensions-150;
+$size-gap-lg: $base-size-dimensions-200;
+$size-gap-xl: $base-size-dimensions-300;
+$size-gap-xxl: $base-size-dimensions-400;
+
+$size-border-radius-none: $base-size-dimensions-0;
+$size-border-radius-xs: $base-size-dimensions-50;
+$size-border-radius-sm: $base-size-dimensions-100;
+$size-border-radius-md: $base-size-dimensions-150;
+$size-border-radius-lg: $base-size-dimensions-200;
+$size-border-radius-full: $base-size-dimensions-circle;
+
+$size-border-width-none: $base-size-dimensions-0;
+$size-border-width-xs: $base-size-dimensions-50;
+$size-border-width-sm: $base-size-dimensions-100;

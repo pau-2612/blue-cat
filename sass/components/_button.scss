@@ -1,0 +1,57 @@
+
+@use '../utilities/variables'as *;
+
+@use '../utilities/mixins'as *;
+
+
+/* ---- CLASES ---- */
+
+.primary-button {
+    background-color: $color-interactive-background-default-enabled;
+    color: $color-interactive-content-default;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    @include typo-styles(16px, 20px, center);
+    font-weight: 600;
+    border: none;
+    border-radius: $size-border-radius-sm;
+    padding: $size-padding-md $size-padding-xl;
+}
+.primary-button:hover{
+    background-color: $color-interactive-background-default-hover;
+}
+
+.primary-button:active{
+    background-color: $color-interactive-background-default-pressed;
+}
+
+.secondary-button {
+    background-color: $color-interactive-background-inverse-enabled;
+    color: $color-interactive-content-default;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    @include typo-styles(16px, 20px, center);
+    font-weight: 600;
+    border: 1px solid $color-interactive-stroke-inverse;
+    border-radius: $size-border-radius-sm;
+    padding: $size-padding-md $size-padding-xl;
+}
+
+.secondary-button:hover{
+    color: $color-interactive-content-default-hover;
+}
+
+.secondary-button:active{
+    color: $color-interactive-content-default-pressed;
+    border: 1.5px solid $color-interactive-stroke-inverse;
+}
+
+.button-fill-content {
+    width: 100%;
+}

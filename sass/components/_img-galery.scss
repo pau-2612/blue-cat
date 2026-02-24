@@ -1,0 +1,22 @@
+
+
+/* NUEVA COLECCION */
+
+.galeria{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    max-width: 1048px;
+    margin-bottom: 20px;
+}
+
+.img-galeria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grande {
+    grid-row: span 2;
+}

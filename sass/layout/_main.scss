@@ -1,0 +1,84 @@
+
+
+@use '../utilities/variables'as *;
+
+@use '../utilities/mixins'as *;
+
+
+
+/* ---- CLASES ---- */
+
+.bkg-color-verde {
+    background-color: $color-core-background-alternative-green;
+}
+.bkg-color-lila {
+    background-color: $color-core-background-alternative-violet;
+}
+
+
+/* INTRO */
+
+.main-intro {
+    @include flex-values(null, column, center);
+    gap: 64px;
+    margin: 112px 80px 80px 80px;
+}
+
+.h1-intro {
+    @include typo-styles(48px, 52px, center);
+    margin-bottom: 16px;
+}
+
+/* HOME */
+
+.home-intro {
+    @include flex-values(null, column, center);
+    gap: 40px;
+    margin: 80px;
+}
+
+.hero {
+    @include flex-values(center, row, center);
+    background-color: $color-core-background-alternative-green;
+    padding: 112px 80px 80px 80px;
+    gap: 80px;
+}
+
+.hero-content {
+    @include flex-values(null, column, left);
+    align-content: center;
+    height: auto;
+    gap: 40px;
+}
+
+.hero-superindice {
+    color: $color-core-content-alternative-violet;
+    @include typo-styles(20px, 24px, left);
+    font-weight: 400;
+    margin-bottom: $size-padding-xs;
+}
+.hero-body {
+    @include typo-styles(16px, 20px, left);
+    margin-top: $size-padding-md;
+}
+.hero-img {
+    width: 50vw ;
+}
+
+/* NUEVA COLECCION */
+
+.title-nueva-coleccion {
+    @include typo-styles(48px, 52px, left);
+    margin-bottom: 24px;
+}
+
+.hero-nueva-coleccion {
+    @include flex-values(center, row, center);
+    max-width: 1048px;
+    gap: 80px;
+    margin-bottom: 20px;
+}
+
+.hero-img-nueva-coleccion {
+    width: 40vw;
+}

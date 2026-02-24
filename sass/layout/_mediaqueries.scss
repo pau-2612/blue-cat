@@ -1,0 +1,114 @@
+
+
+@use '../utilities/mixins'as *;
+
+
+/* ----  MEDIAQUERIE ---- */
+
+/* TABLET 992px */
+@media (max-width: 992px){
+    
+    /* GENERALES */
+    h1 {
+    @include typo-styles(48px, 52px, center);
+    }
+
+    h2 {
+        @include typo-styles(40px, 44px, null);
+    }
+
+    h3 {
+        @include typo-styles(28px, 32px, null);
+    }
+
+    /* NAVBAR */
+
+    .user-actions {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .nav-right-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 0 40px 40px;
+        padding-left: 40px;
+        width: 100%;
+    }
+
+    /* HOME */
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .hero-content {
+        align-items: center;
+        gap: 32px;
+    }
+
+    .hero-superindice {
+        text-align: center;
+    }
+
+    .hero-body {
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .main-diversion-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .card-plain {
+        max-width: 400px;
+    }
+
+    .main-cards-full {
+        flex-direction: column;
+    }
+
+    .textfield {
+        width: 100%;
+    }
+
+    /* NUEVA COLECCION */
+    .hero-nueva-coleccion {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .title-nueva-coleccion {
+        text-align: center;
+    }
+    .hero-img-nueva-coleccion {
+        width: 100%;
+    }
+
+    .galeria {
+    grid-template-columns: 1fr;
+    }
+
+    /* CONTACTO */
+    
+    .form-style {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer-spacing {
+    flex-direction: column;
+    gap: 40px;
+    }
+
+    .footer-left {
+        flex-direction: column;
+    }
+}

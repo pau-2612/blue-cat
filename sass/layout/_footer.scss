@@ -1,0 +1,95 @@
+
+@use '../utilities/variables'as *;
+
+@use '../utilities/mixins'as *;
+
+
+body footer div img {
+    width: 40px;
+    height: 40px;
+    /* logo size */
+}
+
+body footer div div ul li a {
+    color: $color-core-content-default;
+    /* color de enlaces del footer */
+}
+
+/* ---- CLASES ---- */
+
+/* FOOTER */
+
+.footer-spacing {
+    @include flex-values(space-between, null, null);
+    padding: 32px 80px;
+    width: 100%;
+}
+
+.footer-left {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-left-text {
+    @include flex-values(null, column, null);
+    gap: 32px;
+}
+
+.footer-left-text-items {
+    @include flex-values(null, column, null);
+    gap: 10px;
+}
+
+.footer-mid-right {
+    @include flex-values(null, column, null);
+    gap: 32px;
+
+}
+
+.footer-mid {
+    @include flex-values(null, column, null);
+    gap: $size-gap-xxl;
+}
+
+.footer-mid-help {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 8px;
+}
+
+.footer-mid-help-item {
+    display: flex;
+    gap: $size-gap-sm;
+}
+
+.footer-mid-rrss {
+    display: flex;
+    gap: $size-gap-xxl;
+}
+
+.footer-right {
+    @include flex-values(null, column, null);
+    gap: $size-gap-lg;
+}
+
+.footer-right-img {
+    display: flex;
+    gap: $size-gap-lg;
+}
+
+/* clases para las img del footer */
+.img-ayuda {
+    width: 16px;
+    height: 16px;
+    /* tamaño img ayuda del footer */
+}
+.img-rrss {
+    width: 24px;
+    height: 24px;
+    /* tamaño img rrss del footer */
+}
+.img-pago-envio {
+    width: 48px;
+    height: 32px;
+    /* tamaño img envio y pago del footer */
+}

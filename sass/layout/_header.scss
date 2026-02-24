@@ -1,0 +1,97 @@
+
+@use '../utilities/variables'as *;
+
+@use '../utilities/mixins'as *;
+
+
+header nav div a img {
+    width: 40px;
+}
+
+header nav div ul li a {
+    @include typo-styles(14px, 18px, null);
+    color: inherit;
+    /* nav menu */
+}
+
+header nav div ul li a img {
+    width: 16px;
+    /* user actions img size */
+}
+
+/* ---- CLASES ---- */
+
+.h2-header {
+    @include flex-values(null, column, center);
+    gap: $size-gap-xxl;
+}
+
+/* NAVBAR BOOSTRAP */
+
+.nav-container {
+    background-color: $color-core-background-default;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 8px 68px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-menu-spacing {
+    display: flex;
+    gap: $size-gap-xxl;
+    padding-left: 40px;
+}
+
+.nav.menu.item {
+    @include typo-styles(14px, 18px, null);
+    color: $base-color-light-black-color;
+}
+
+.nav-right-menu {
+    @include flex-values(null, null, center);
+    padding-left: 40px;
+    gap: 24px;
+}
+
+.search-container {
+    @include flex-values(null, null, center);
+    background-color: $color-interactive-background-color;
+    border-radius: $size-border-width-sm;
+    padding: 4px 8px;
+    width: 200px;
+}
+
+.search-container input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 12px;
+    flex: 1;
+}
+
+.search-container img {
+    width: 16px;
+    height: 16px;
+}
+
+.user-actions {
+    display: flex;
+    align-content: center;
+    gap: $size-gap-xxl;
+}
+
+.user-actions-item {
+    @include flex-values(null, null, center);
+    gap: $size-gap-sm;
+    @include typo-styles(12px, 14px, null);
+    font-weight: 300;
+}
+
+.nav-active {
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-decoration-color: $color-core-background-inverse;
+}

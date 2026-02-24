@@ -1,0 +1,15 @@
+
+/* mixin */
+
+@mixin flex-values($justify, $direction, $align){
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+@mixin typo-styles($size, $height, $align){
+    font-size: $size;
+    line-height: $height;
+    text-align: $align;
+}

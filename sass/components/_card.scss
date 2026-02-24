@@ -1,0 +1,102 @@
+
+@use '../utilities/variables'as *;
+
+@use '../utilities/mixins'as *;
+
+
+body main section div div a p {
+    color: $color-core-content-default;
+    text-align: center;
+    /* color del p de las cards */
+}
+
+body main section div div img {
+    width: 200px;
+    /* img size cards home */
+}
+
+body main section div div a img {
+    width: 200px;
+    height: 168px;
+    /* img size cards camas */
+}
+
+/* ---- CLASES ---- */
+
+/* CARDS */
+
+.main-diversion-cards {
+    @include flex-values(space-between, null, null);
+    width: 100%;
+    max-width: 1280px;
+}
+
+.card-plain {
+    @include flex-values(null, column, center);
+    gap: 24px;
+}
+
+.card-plain-content {
+    @include flex-values(null, column, center);
+    gap: 8px;
+}
+
+.card-title {
+    @include typo-styles(20px, 24px, center);
+    font-weight: 600;
+    color: $color-core-content-alternative-violet; 
+}
+
+.main-cards-full {
+    @include flex-values(center, row, center);
+    gap: 40px;
+    margin: 0px 80px;
+}
+
+.card-full {
+    background-color: $color-core-background-alternative-violet;
+    @include flex-values(null, column, center);
+    padding: 40px;
+    gap: 24px;
+}
+
+.card-full-img {
+    width: 100%;
+}
+
+.card-shadow {
+    @include flex-values(null, column, null);
+    gap: 8px;
+    max-width: 232px;
+    box-shadow: 0 4px 10px rgba(0, 2, 10, 0.1);
+    border-radius: $size-border-radius-lg;
+}
+
+.card-shadow-content {
+    @include flex-values(null, column, center);
+    padding: 0px 16px;
+    gap: 16px;
+}
+
+.card-shadow-text {
+    @include flex-values(null, column, center);
+    padding-top: 8px;
+    gap: 4px;
+}
+
+.card-shadow-button {
+    display: flex;
+    padding: 16px;
+    width: 100%;
+}
+
+.card-shadow-img {
+    width: 100%;
+}
+
+/* PRODUCTOS */
+.cards-container {
+    @include flex-values(center, null, null);
+    flex-wrap: wrap;
+    gap: 40px;
+}
