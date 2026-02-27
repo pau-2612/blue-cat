@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Camas y cuevas</title>
 
     <!-- Boostrap - enlace al CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -36,7 +36,7 @@
                             <a href="../index.html">Inicio</a>
                         </li>
                         <li class="nav.menu.item">
-                            <a href="./juguetes.html">Juguetes</a>
+                            <a href="../pages/juguetes.html">Juguetes</a>
                         </li>
                         <li class="nav.menu.item">
                             <a href="./camas-cuevas.html">Camas y cuevas</a>
@@ -44,11 +44,11 @@
                         <li class="nav.menu.item">
                             <a href="./comederos.html">Comederos</a>
                         </li>
-                        <li class="nav.menu.item">
-                            <a href="./quienes-somos.html">Quienes somos</a>
+                        <li class="nav.menu.item nav-active">
+                            <a href="">Quienes somos</a>
                         </li>
-                        <li class="nav.menu.item  nav-active">
-                            <a href="">Contáctanos</a>
+                        <li class="nav.menu.item">
+                            <a href="./contacto.html">Contáctanos</a>
                         </li>
                     </ul>
 
@@ -83,60 +83,66 @@
         </nav>
     </header>
 
-
     <main>
         <section class="main-intro">
-             <!-- intro -->
-            <div>
-                <h1 class="h1-intro">Contacta con nosotros</h1>
-                <p class="body-lg">Rellena el formulario y en breve nos pondremos en contacto contigo.</p>
+            <!-- intro -->
+            <div class="intro-paragraph">
+                <h1 class="h1-intro">Nuestra historia</h1>
+                <p class="body-lg paragraph-margin">Blue Cat surge impulsada por algo muy simple y muy profundo: el amor por los gatos. Desde el primer día, nuestra misión fue crear accesorios que respetaran su naturaleza, cuidaran su salud y convivieran en armonía con el entorno.</p>
+                <p class="body-lg paragraph-margin">Creemos en el diseño consciente, en los materiales naturales y reciclados, y en la belleza de lo esencial. Cada juguete, cada cama y cada comedero están pensados para acompañar su día a día con suavidad, seguridad y bienestar.</p>
+                <p class="body-lg">Hoy, Blue Cat llega a hogares de toda España, pero seguimos trabajando con la misma filosofía con la que empezamos: escuchar a los gatos y crear para ellos con respeto.</p>
             </div>
 
-            <form class="form-style">
-                <div class="user-container">
-                    <div class="contact-container">
-                        <label for="name-form">Nombre</label>
-                        <div class="textfield-container">
-                            <input type="text" id="name-form" placeholder="Nombre"required>
-                        </div>
+            <!-- modulos texto-img -->
+            <div class="timeline-container">
+
+                <!-- modulo 1-->
+                <div class="timeline-item">
+                    <div class="timeline-item-container">
+                        <h2 class="timeline-item-title text-inverse">Una nueva aventura</h2>
+                        <p class="timeline-body-md text-inverse">Blue Cat nació en la costa de Tossa de Mar, Catalunya inspirada por la calma del mar y la conexión con la naturaleza. Observando cómo los gatos exploran, descansan y juegan, entendimos que sus accesorios debían ser tan nobles como su esencia: simples, seguros y hechos con materiales responsables. Así comenzó todo, con una idea clara y mucho amor.</p>
                     </div>
-                    <div class="contact-container">
-                        <label for="surname-form">Apellido</label>
-                        <div class="textfield-container">
-                            <input type="text" id="surname-form" placeholder="Apellido"required>
-                        </div>
+                    <div class="img-limit">
+                        <img src="../img/quienes-somos/timeline-01.jpg" class="tineline-img" alt="Imagen gato en la playa">
                     </div>
                 </div>
 
-                <div class="contact-container">
-                    <label for="email-form">Email de contacto</label>
-                    <div class="textfield-container">
-                        <input type="email" id="email-form" placeholder="Email"required>
+                <!-- modulo 2-->
+                <div class="timeline-item timeline-item-inverse">
+                    <div class="timeline-item-container">
+                        <h2 class="timeline-item-title">Diseño consciente</h2>
+                        <p class="timeline-body-md">Con los primeros productos en circulación, reforzamos nuestro compromiso con la salud felina. Investigamos materiales no tóxicos, resistentes y sostenibles, priorizando fibras naturales y opciones recicladas. Cada detalle comenzó a diseñarse pensando en su bienestar físico y emocional, manteniendo una estética serena y atemporal.</p>
+                    </div>
+                    <div class="img-limit">
+                        <img class="tineline-img" src="../img/quienes-somos/timeline-02.jpg" alt="Imagen gato comiendo">
                     </div>
                 </div>
 
-                <div class="contact-container">
-                    <label for="subject">Motivo de contacto</label>
-                    <select class="textfield-container" name="" id="subject"required> 
-                        <option value=""disabled selected hidden>Seleccionar una opcion</option>
-                        <option value="stock">No hay stock de lo que quiero</option>
-                        <option value="pedido">Problemas con un pago</option>
-                        <option value="envio">Problemas con un envío</option>
-                    </select>
+                 <!-- modulo 3-->
+                <div class="timeline-item">
+                    <div class="timeline-item-container"> 
+                        <h2 class="timeline-item-title text-inverse">Comunidad y confianza</h2>
+                        <p class="timeline-body-md text-inverse">Blue Cat empezó a crecer gracias a personas que compartían nuestra forma de ver el mundo. Más que vender accesorios, construimos una comunidad de amantes de los gatos que buscan calidad, respeto por el medio ambiente y diseño honesto. La confianza de nuestros clientes nos impulsó a seguir mejorando cada colección.</p>
+                    </div>
+                    <div class="img-limit">
+                        <img class="tineline-img" src="../img/quienes-somos/timeline-03.jpg" alt="Imagen gato con mano">
+                    </div>
                 </div>
 
-                <div class="contact-container">
-                    <label for="description">Descripción</label>
-                    <textarea class="textfield-container" name="" id="description" placeholder="Escribe aquí tu mensaje"required></textarea>
+                <!-- modulo 4-->
+                <div class="timeline-item timeline-item-inverse">
+                    <div class="timeline-item-container">
+                        <h2 class="timeline-item-title">En toda España</h2>
+                        <p class="timeline-body-md">Actualmente, Blue Cat se comercializa en toda España, manteniendo intacta su esencia original. Seguimos apostando por procesos responsables, materiales cuidadosamente seleccionados y una producción consciente. Porque creemos que cuidar a los gatos también es cuidar el planeta que compartimos.</p>
+                    </div>
+                    <div class="img-limit">
+                        <img class="tineline-img" src="../img/quienes-somos/timeline-04.jpg" alt="Imagen gato durmiendo">
+                    </div>
                 </div>
-
-                <div class="button-container">
-                    <input class="primary-button" type="submit" value="Enviar">
-                </div>
-            </form>
+               
+            </div>        
         </section>
     </main>
-
 
     <footer class="bkg-color-verde footer-spacing">
 

@@ -87,6 +87,10 @@ h4 {
   line-height: 14px;
 }
 
+.paragraph-margin {
+  margin: 8px 0px;
+}
+
 header nav div a img {
   width: 40px;
 }
@@ -278,6 +282,20 @@ header nav div ul li a img {
 
 .hero-img-nueva-coleccion {
   width: 40vw;
+}
+
+/* QUIENES SOMOS */
+.intro-paragraph {
+  padding: 0px 128px;
+  margin-bottom: 20px;
+}
+
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
 }
 
 /* ---- CLASES ---- */
@@ -544,6 +562,50 @@ select:invalid {
   width: 100%;
 }
 
+.timeline-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0px 120px;
+  gap: 40px;
+}
+
+.timeline-item-container {
+  max-width: 34vw;
+}
+
+.timeline-item-inverse {
+  flex-direction: row-reverse;
+}
+
+.timeline-item-title {
+  font-size: 32px;
+  line-height: 38px;
+  text-align: left;
+}
+
+.timeline-body-md {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.text-inverse {
+  text-align: right;
+}
+
+.tineline-img {
+  width: 32vw;
+  transition: transform 0.3s;
+}
+
+.tineline-img:hover {
+  transform: scale(1.2);
+}
+
+.img-limit {
+  overflow: hidden;
+}
+
 /* NUEVA COLECCION */
 .galeria {
   display: grid;
@@ -676,6 +738,10 @@ body footer div div ul li a {
     font-size: 28px;
     line-height: 32px;
   }
+  .h1-intro {
+    font-size: 40px;
+    line-height: 44px;
+  }
   /* NAVBAR */
   .user-actions {
     flex-direction: column;
@@ -735,6 +801,37 @@ body footer div div ul li a {
   }
   .galeria {
     grid-template-columns: 1fr;
+  }
+  /* QUIENES SOMOS */
+  .intro-paragraph {
+    margin-bottom: 0px;
+  }
+  .timeline-item-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .timeline-container {
+    gap: 48px;
+  }
+  .intro-paragraph {
+    padding: 0px;
+  }
+  .timeline-item-container {
+    max-width: 100vw;
+  }
+  .timeline-item {
+    flex-direction: column;
+    margin: 0px;
+    gap: 20px;
+  }
+  .timeline-item-title {
+    text-align: center;
+  }
+  .timeline-body-md {
+    text-align: center;
+  }
+  .tineline-img {
+    width: 80vw;
   }
   /* CONTACTO */
   .form-style {

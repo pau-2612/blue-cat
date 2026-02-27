@@ -57,3 +57,7 @@ h4 {
 .body-sm {
     @include typo-styles(12px, 14px, null);
 }
+
+.paragraph-margin {
+    margin: 8px 0px;
+}

@@ -29,6 +29,7 @@
     margin-bottom: 16px;
 }
 
+
 /* HOME */
 
 .home-intro {
@@ -82,3 +83,17 @@
 .hero-img-nueva-coleccion {
     width: 40vw;
 }
+
+
+/* QUIENES SOMOS */
+
+.intro-paragraph {
+    padding: 0px 128px;
+    margin-bottom: 20px;
+}
+
+.timeline-container {
+    @include flex-values(center, column, center);
+    gap: 80px;
+}
+

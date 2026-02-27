@@ -10,7 +10,7 @@
     
     /* GENERALES */
     h1 {
-    @include typo-styles(48px, 52px, center);
+        @include typo-styles(48px, 52px, center);
     }
 
     h2 {
@@ -19,6 +19,10 @@
 
     h3 {
         @include typo-styles(28px, 32px, null);
+    }
+
+    .h1-intro {
+        @include typo-styles(40px, 44px, null);
     }
 
     /* NAVBAR */
@@ -95,6 +99,48 @@
     .galeria {
     grid-template-columns: 1fr;
     }
+
+    /* QUIENES SOMOS */
+
+    .intro-paragraph {
+        margin-bottom: 0px;
+    }
+
+    .timeline-item-title {
+        @include typo-styles(28px, 32px, null);
+    }
+
+    .timeline-container {
+        gap: 48px;
+    }
+
+    .intro-paragraph {
+        padding: 0px;
+    }
+
+    .timeline-item-container {
+        max-width: 100vw;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        margin: 0px;
+        gap: 20px;
+    }
+
+    .timeline-item-title {
+        text-align: center;
+    }
+
+    .timeline-body-md {
+        text-align: center;
+    }
+
+    .tineline-img {
+        width: 80vw;
+    }
+
+
 
     /* CONTACTO */
     

@@ -1,0 +1,47 @@
+
+
+@use '../utilities/variables'as *;
+
+@use '../utilities/mixins'as *;
+
+
+
+.timeline-item {
+    @include flex-values(null, row, flex-start);
+    margin: 0px 120px;
+    gap: 40px
+}
+
+.timeline-item-container {
+    max-width: 34vw;
+}
+
+.timeline-item-inverse {
+    flex-direction: row-reverse
+}
+
+
+.timeline-item-title {
+    @include typo-styles(32px, 38px, left);
+}
+
+.timeline-body-md {
+    @include typo-styles(14px, 18px, null);
+}
+
+.text-inverse {
+    text-align: right;
+}
+
+.tineline-img {
+    width: 32vw;
+    transition: transform 0.3s;
+}
+
+.tineline-img:hover {
+    transform: scale(1.2);
+}
+
+.img-limit {
+    overflow: hidden;
+}
