@@ -742,7 +742,17 @@ body footer div div ul li a {
     font-size: 40px;
     line-height: 44px;
   }
+  .button-responsive {
+    width: 100%;
+    max-width: 520px;
+  }
   /* NAVBAR */
+  .logo-drawer-menu {
+    padding-left: 40px;
+  }
+  .drawer-menu {
+    padding-top: 20px;
+  }
   .user-actions {
     flex-direction: column;
     align-items: left;
@@ -798,6 +808,7 @@ body footer div div ul li a {
   }
   .hero-img-nueva-coleccion {
     width: 100%;
+    max-width: 400px;
   }
   .galeria {
     grid-template-columns: 1fr;
@@ -836,14 +847,55 @@ body footer div div ul li a {
   /* CONTACTO */
   .form-style {
     width: 100%;
+    padding: 0px;
+  }
+  .button-container {
+    padding-top: 16px;
+    width: 100%;
+  }
+  .footer-mid-help {
+    flex-direction: column;
+    gap: 8px;
+  }
+  /* MOBILE 520px */
+}
+@media (max-width: 992px) and (max-width: 520px) {
+  .hero {
+    padding: 112px 40px 80px 40px;
+  }
+  .home-intro {
+    margin: 80px 40px 80px 40px;
+  }
+  .main-cards-full {
+    margin: 40px;
+  }
+  .main-intro {
+    margin: 80px 40px 80px 40px;
   }
   /* FOOTER */
   .footer-spacing {
     flex-direction: column;
+    padding: 32px 40px;
     gap: 40px;
   }
   .footer-left {
     flex-direction: column;
+  }
+  .footer-left-text {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .footer-mid-help {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .footer-responsive-layout {
+    flex-direction: row;
+  }
+  .img-pago-envio {
+    width: 32px;
+    height: 20px;
+    /* tamaño img envio y pago del footer */
   }
 }
 
